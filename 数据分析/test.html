@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+<body style="">
+
+	<div id="main" class="fwr-pc-main">
+		<div id="header" class="fwr-pc-header" style="">
+
+			<h1 class="fwr-pc-header-h1" data-i18n="[html]CommonLng.HeaderTitle">福昕在线阅读器 </h1>
+			<p class="right fwr-pc-header-p">
+				<a class="fwr-pc-header-a" href="mailto:sales@foxitsoftware.com" data-i18n="[html]CommonLng.Contact">联系我们</a> | <a class="fwr-pc-header-a" href="https://www.foxitsoftware.com/products/sdk/web-pdf-sdk" target="_blank" data-i18n="[html]CommonLng.Foxit">福昕</a>
+			</p>
+		</div>
+		<div id="notSupportBrowser" class="fwr-pc-notsupportbrowser" style="">
+            <img class="fwr-pc-notsupportbrowser_icon" src="../images/reader/dlg/warn.png" border="0">
+            <p class="fwr-pc-notsupportbrowser_msg"></p>
+		</div>
+
+		<div id="right" class="fwr-pc-right" style="height: 625px;">
+			<div id="toolbar" class="fwr-toolbar">
+				<ul class="left">
+					<li style="display: list-item;"><ul id="selectPagePanel" class="fwr-select-page">
+							<li class="fwr-toolbar-page-prev"><a id="btnGotoPrevPage" class="fwr-toolbar-page-icons fwr-toolbar-page-prev"></a> <span class="fwr-toolbar-tip"> <strong data-i18n="[html]PCLng.ToolBar.PreviousPage">上一页</strong><br>
+									<div data-i18n="[html]PCLng.ToolBar.PreviousPageTip">跳转至上一个页面</div>
+							</span></li>
+							<li class="fwr-toolbar-page-next" style="float: right;"><a id="btnGotoNextPage" class="fwr-toolbar-page-icons fwr-toolbar-page-next"></a> <span class="fwr-toolbar-tip"> <strong data-i18n="[html]PCLng.ToolBar.NextPage">下一页</strong><br>
+									<div data-i18n="[html]PCLng.ToolBar.NextPageTip">跳转至下一个页面</div>
+							</span></li>
+						<div id="gotoPagesBox" class="fwr-select-box"><input type="text" id="pageSelectInput" name="select_showbox" style="cursor:pointer" class="fwr-select-showbox"><div id="pageSelectBox" class="fwr-select-optionbox"><ul id="pageSelectOption" class="fwr-select-option"><li class="fwr-select-option-li" style="">1 / 162</li><li class="fwr-select-option-li" style="">2 / 162</li><li class="fwr-select-option-li selected" style="">3 / 162</li><li class="fwr-select-option-li" style="">4 / 162</li><li class="fwr-select-option-li" style="">5 / 162</li><li class="fwr-select-option-li" style="">6 / 162</li><li class="fwr-select-option-li" style="">7 / 162</li><li class="fwr-select-option-li" style="">8 / 162</li><li class="fwr-select-option-li" style="">9 / 162</li><li class="fwr-select-option-li" style="">10 / 162</li><li class="fwr-select-option-li" style="">11 / 162</li><li class="fwr-select-option-li" style="">12 / 162</li><li class="fwr-select-option-li" style="">13 / 162</li><li class="fwr-select-option-li" style="">14 / 162</li><li class="fwr-select-option-li" style="">15 / 162</li><li class="fwr-select-option-li" style="">16 / 162</li><li class="fwr-select-option-li" style="">17 / 162</li><li class="fwr-select-option-li" style="">18 / 162</li><li class="fwr-select-option-li" style="">19 / 162</li><li class="fwr-select-option-li" style="">20 / 162</li><li class="fwr-select-option-li" style="">21 / 162</li><li class="fwr-select-option-li" style="">22 / 162</li><li class="fwr-select-option-li" style="">23 / 162</li><li class="fwr-select-option-li" style="">24 / 162</li><li class="fwr-select-option-li" style="">25 / 162</li><li class="fwr-select-option-li" style="">26 / 162</li><li class="fwr-select-option-li" style="">27 / 162</li><li class="fwr-select-option-li" style="">28 / 162</li><li class="fwr-select-option-li" style="">29 / 162</li><li class="fwr-select-option-li" style="">30 / 162</li><li class="fwr-select-option-li" style="">31 / 162</li><li class="fwr-select-option-li" style="">32 / 162</li><li class="fwr-select-option-li" style="">33 / 162</li><li class="fwr-select-option-li" style="">34 / 162</li><li class="fwr-select-option-li" style="">35 / 162</li><li class="fwr-select-option-li" style="">36 / 162</li><li class="fwr-select-option-li" style="">37 / 162</li><li class="fwr-select-option-li" style="">38 / 162</li><li class="fwr-select-option-li" style="">39 / 162</li><li class="fwr-select-option-li" style="">40 / 162</li><li class="fwr-select-option-li" style="">41 / 162</li><li class="fwr-select-option-li" style="">42 / 162</li><li class="fwr-select-option-li" style="">43 / 162</li><li class="fwr-select-option-li" style="">44 / 162</li><li class="fwr-select-option-li" style="">45 / 162</li><li class="fwr-select-option-li" style="">46 / 162</li><li class="fwr-select-option-li" style="">47 / 162</li><li class="fwr-select-option-li" style="">48 / 162</li><li class="fwr-select-option-li" style="">49 / 162</li><li class="fwr-select-option-li" style="">50 / 162</li><li class="fwr-select-option-li" style="">51 / 162</li><li class="fwr-select-option-li" style="">52 / 162</li><li class="fwr-select-option-li" style="">53 / 162</li><li class="fwr-select-option-li" style="">54 / 162</li><li class="fwr-select-option-li" style="">55 / 162</li><li class="fwr-select-option-li" style="">56 / 162</li><li class="fwr-select-option-li" style="">57 / 162</li><li class="fwr-select-option-li" style="">58 / 162</li><li class="fwr-select-option-li" style="">59 / 162</li><li class="fwr-select-option-li" style="">60 / 162</li><li class="fwr-select-option-li" style="">61 / 162</li><li class="fwr-select-option-li" style="">62 / 162</li><li class="fwr-select-option-li" style="">63 / 162</li><li class="fwr-select-option-li" style="">64 / 162</li><li class="fwr-select-option-li" style="">65 / 162</li><li class="fwr-select-option-li" style="">66 / 162</li><li class="fwr-select-option-li" style="">67 / 162</li><li class="fwr-select-option-li" style="">68 / 162</li><li class="fwr-select-option-li" style="">69 / 162</li><li class="fwr-select-option-li" style="">70 / 162</li><li class="fwr-select-option-li" style="">71 / 162</li><li class="fwr-select-option-li" style="">72 / 162</li><li class="fwr-select-option-li" style="">73 / 162</li><li class="fwr-select-option-li" style="">74 / 162</li><li class="fwr-select-option-li" style="">75 / 162</li><li class="fwr-select-option-li" style="">76 / 162</li><li class="fwr-select-option-li" style="">77 / 162</li><li class="fwr-select-option-li" style="">78 / 162</li><li class="fwr-select-option-li" style="">79 / 162</li><li class="fwr-select-option-li" style="">80 / 162</li><li class="fwr-select-option-li" style="">81 / 162</li><li class="fwr-select-option-li" style="">82 / 162</li><li class="fwr-select-option-li" style="">83 / 162</li><li class="fwr-select-option-li" style="">84 / 162</li><li class="fwr-select-option-li" style="">85 / 162</li><li class="fwr-select-option-li" style="">86 / 162</li><li class="fwr-select-option-li" style="">87 / 162</li><li class="fwr-select-option-li" style="">88 / 162</li><li class="fwr-select-option-li" style="">89 / 162</li><li class="fwr-select-option-li" style="">90 / 162</li><li class="fwr-select-option-li" style="">91 / 162</li><li class="fwr-select-option-li" style="">92 / 162</li><li class="fwr-select-option-li" style="">93 / 162</li><li class="fwr-select-option-li" style="">94 / 162</li><li class="fwr-select-option-li" style="">95 / 162</li><li class="fwr-select-option-li" style="">96 / 162</li><li class="fwr-select-option-li" style="">97 / 162</li><li class="fwr-select-option-li" style="">98 / 162</li><li class="fwr-select-option-li" style="">99 / 162</li><li class="fwr-select-option-li" style="">100 / 162</li><li class="fwr-select-option-li" style="">101 / 162</li><li class="fwr-select-option-li" style="">102 / 162</li><li class="fwr-select-option-li" style="">103 / 162</li><li class="fwr-select-option-li" style="">104 / 162</li><li class="fwr-select-option-li" style="">105 / 162</li><li class="fwr-select-option-li" style="">106 / 162</li><li class="fwr-select-option-li" style="">107 / 162</li><li class="fwr-select-option-li" style="">108 / 162</li><li class="fwr-select-option-li" style="">109 / 162</li><li class="fwr-select-option-li" style="">110 / 162</li><li class="fwr-select-option-li" style="">111 / 162</li><li class="fwr-select-option-li" style="">112 / 162</li><li class="fwr-select-option-li" style="">113 / 162</li><li class="fwr-select-option-li" style="">114 / 162</li><li class="fwr-select-option-li" style="">115 / 162</li><li class="fwr-select-option-li" style="">116 / 162</li><li class="fwr-select-option-li" style="">117 / 162</li><li class="fwr-select-option-li" style="">118 / 162</li><li class="fwr-select-option-li" style="">119 / 162</li><li class="fwr-select-option-li" style="">120 / 162</li><li class="fwr-select-option-li" style="">121 / 162</li><li class="fwr-select-option-li" style="">122 / 162</li><li class="fwr-select-option-li" style="">123 / 162</li><li class="fwr-select-option-li" style="">124 / 162</li><li class="fwr-select-option-li" style="">125 / 162</li><li class="fwr-select-option-li" style="">126 / 162</li><li class="fwr-select-option-li" style="">127 / 162</li><li class="fwr-select-option-li" style="">128 / 162</li><li class="fwr-select-option-li" style="">129 / 162</li><li class="fwr-select-option-li" style="">130 / 162</li><li class="fwr-select-option-li" style="">131 / 162</li><li class="fwr-select-option-li" style="">132 / 162</li><li class="fwr-select-option-li" style="">133 / 162</li><li class="fwr-select-option-li" style="">134 / 162</li><li class="fwr-select-option-li" style="">135 / 162</li><li class="fwr-select-option-li" style="">136 / 162</li><li class="fwr-select-option-li" style="">137 / 162</li><li class="fwr-select-option-li" style="">138 / 162</li><li class="fwr-select-option-li" style="">139 / 162</li><li class="fwr-select-option-li" style="">140 / 162</li><li class="fwr-select-option-li" style="">141 / 162</li><li class="fwr-select-option-li" style="">142 / 162</li><li class="fwr-select-option-li" style="">143 / 162</li><li class="fwr-select-option-li" style="">144 / 162</li><li class="fwr-select-option-li" style="">145 / 162</li><li class="fwr-select-option-li" style="">146 / 162</li><li class="fwr-select-option-li" style="">147 / 162</li><li class="fwr-select-option-li" style="">148 / 162</li><li class="fwr-select-option-li" style="">149 / 162</li><li class="fwr-select-option-li" style="">150 / 162</li><li class="fwr-select-option-li" style="">151 / 162</li><li class="fwr-select-option-li" style="">152 / 162</li><li class="fwr-select-option-li" style="">153 / 162</li><li class="fwr-select-option-li" style="">154 / 162</li><li class="fwr-select-option-li" style="">155 / 162</li><li class="fwr-select-option-li" style="">156 / 162</li><li class="fwr-select-option-li" style="">157 / 162</li><li class="fwr-select-option-li" style="">158 / 162</li><li class="fwr-select-option-li" style="">159 / 162</li><li class="fwr-select-option-li" style="">160 / 162</li><li class="fwr-select-option-li" style="">161 / 162</li><li class="fwr-select-option-li" style="">162 / 162</li></ul><div id="pageSelectBar" class="fwr-select-box-bar">-</div></div></div></ul></li>
+					<li style="display: list-item;"><ul id="zoomPagePanel" class="fwr-select-zoom">
+							<li class="fwr-select-zoom-out"><a id="btnZoomOut" class="fwr-select-zoom-out fwr-select-zoom-icons"></a> <span class="fwr-toolbar-tip"> <strong data-i18n="[html]PCLng.ToolBar.ZoomOut">缩小</strong><br>
+									<div data-i18n="[html]PCLng.ToolBar.ZoomOutTip">缩小</div>
+							</span></li>
+							<li class="fwr-select-zoom-in" style="float: right;"><a id="btnZoomIn" class="fwr-select-zoom-in fwr-select-zoom-icons"></a>
+								<span class="fwr-toolbar-tip disabled"> <strong data-i18n="[html]PCLng.ToolBar.ZoomIn">放大</strong><br>
+									<div data-i18n="[html]PCLng.ToolBar.ZoomInTip">放大</div>
+							</span></li>
+						<div id="zoomPagesBox" class="fwr-select-box"><input type="text" id="zoomSelectInput" name="select_showbox" readonly="readonly" style="cursor:pointer" class="fwr-select-showbox"><div id="zoomSelectBox" class="fwr-select-optionbox"><ul id="zoomselectoption" class="fwr-select-option"><li class="fwr-select-option-li">50%</li><li class="fwr-select-option-li">75%</li><li class="fwr-select-option-li selected">100%</li><li class="fwr-select-option-li">125%</li><li class="fwr-select-option-li">150%</li><li class="fwr-select-option-li">200%</li><li class="fwr-select-option-li">400%</li><li class="fwr-select-option-li">800%</li><li class="fwr-select-option-li">1000%</li><li class="fwr-select-option-li">适应页面</li><li class="fwr-select-option-li">适应宽度</li></ul><div id="zoomSelectBar" class="fwr-select-box-bar">-</div></div></div></ul></li>
+					<li style="display: list-item;">
+						<p id="btnHandTool" class="fwr-toolbar-icons fwr-toolbar-hand selected"></p>
+						<span class="fwr-toolbar-tip"> <strong data-i18n="[html]PCLng.ToolBar.Hand">手型</strong><br>
+							<div data-i18n="[html]PCLng.ToolBar.HandTip">点击并且拖拽着围绕文档平移</div>
+					</span>
+					</li>
+					<li style="display: list-item;">
+						<p id="btnTextSelectToolList" data-id="btnTextSelectTool" class="fwr-toolbar-icons fwr-toolbar-textselect"></p>
+						<span class="fwr-toolbar-tip"> <strong data-i18n="[html]PCLng.ToolBar.SelectText">选择文本</strong><br>
+							<div data-i18n="[html]PCLng.ToolBar.SelectTextTip">选取文本用以复制或者添加注释</div>
+						</span>
+						<p class="fwr-toolbar-switch"></p>
+						<ul id="showSelectToolList" style="padding: 10px 12px 5px; display: none;" class="fwr-toolbar-icontext-form">
+							<li id="btnTextSelectTool" class="fwr-toolbar-icontext-li" style="width: auto;height: auto;float: none;">
+                                <b class="fwr-toolbar-icons fwr-toolbar-textselect fwr-toolbar-icontext-b"></b>
+								<label data-i18n="[html]PCLng.ToolBar.SelectText">选择文本</label>
+
+								<span class="fwr-toolbar-list-tip" style="top: 25px; left: 45px; display: none;"> <strong data-i18n="[html]PCLng.ToolBar.SelectText">选择文本</strong><br>
+									<div data-i18n="[html]PCLng.ToolBar.SelectTextTip">选取文本用以复制或者添加注释</div>
+								</span>
+							</li>
+							<li id="btnAnnotSelectTool" class="fwr-toolbar-icontext-li" style="width: auto;height: auto;float: none;">
+                                <b class="fwr-toolbar-icons fwr-toolbar-annotselect fwr-toolbar-icontext-b"></b>
+								<label data-i18n="[html]PCLng.ToolBar.SelectAnnotation">选择标注</label>
+
+								<span class="fwr-toolbar-list-tip" style="top: 25px; left: 45px; display: none;"> <strong data-i18n="[html]PCLng.ToolBar.SelectAnnotation">选择标注</strong><br>
+									<div data-i18n="[html]PCLng.ToolBar.SelectAnnotationTip">选取标注，进行查看、编辑或者删除</div>
+								</span>
+							</li>
+						</ul>
+					</li>
+					<li style="display: list-item;"><p id="basicToolLine" class="l"></p></li>
+					<li style="display: list-item;">
+						<p id="btnTextAnnotTool" class="fwr-toolbar-icons fwr-toolbar-textannot"></p> <span class="fwr-toolbar-tip"> <strong data-i18n="[html]PCLng.ToolBar.Note">备注</strong><br>
+							<div data-i18n="[html]PCLng.ToolBar.NoteTip">插入一个用于简洁说明的备注</div>
+					</span>
+					</li>
+					<li style="display: list-item;">
+						<p id="btnFreeTextToolList" data-id="btnTypeWriterAnnotTool" class="fwr-toolbar-icons fwr-toolbar-typewriterannot"></p> <span class="fwr-toolbar-tip"> <strong data-i18n="[html]PCLng.ToolBar.Typewriter">打字机</strong><br>
+							<div data-i18n="[html]PCLng.ToolBar.TypewriterTip">添加一行文本</div>
+						</span>
+					 	<ul id="showFreeTextToolList" style="padding: 10px 12px 5px; display: none;" class="fwr-toolbar-icontext-form">
+							<li id="btnTypeWriterAnnotTool" class="fwr-toolbar-icontext-li" style="width: auto;height: auto;float: none;">
+								<b class="fwr-toolbar-icons fwr-toolbar-typewriterannot fwr-toolbar-icontext-b"></b>
+								<label data-i18n="[html]PCLng.ToolBar.Typewriter">打字机</label>
+
+								<span class="fwr-toolbar-list-tip" style="top: 25px; left: 45px; display: none;">
+									<strong data-i18n="[html]PCLng.ToolBar.Typewriter">打字机</strong><br>
+									<div data-i18n="[html]PCLng.ToolBar.TypewriterTip">添加一行文本</div>
+								</span>
+							</li>
+
+						</ul>
+					</li>
+					<li style="display: list-item;">
+						<p id="btnPencilAnnotTool" class="fwr-toolbar-icons fwr-toolbar-pencilannot"></p> <span class="fwr-toolbar-tip"> <strong data-i18n="[html]PCLng.ToolBar.Pencil">铅笔</strong><br>
+							<div data-i18n="[html]PCLng.ToolBar.PencilTip">自由绘制</div>
+					</span>
+					</li>
+					<li style="display: list-item;">
+						<p id="btnCommentToolList" data-id="btnHighLightAnnotTool" class="fwr-toolbar-icons fwr-toolbar-highlightannot"></p> <span class="fwr-toolbar-tip"> <strong data-i18n="[html]PCLng.ToolBar.Highlight">高亮</strong><br>
+							<div data-i18n="[html]PCLng.ToolBar.HighlightTip">高亮文本</div>
+						</span>
+						<p class="fwr-toolbar-switch"></p>
+
+						<ul id="showCommentToolList" style="padding: 10px 12px 5px; display: none;" class="fwr-toolbar-icontext-form">
+							<li id="btnHighLightAnnotTool" class="fwr-toolbar-icontext-li" style="width: auto;height: auto;float: none;">
+                                <b class="fwr-toolbar-icons fwr-toolbar-highlightannot fwr-toolbar-icontext-b"></b>
+								<label data-i18n="[html]PCLng.ToolBar.Highlight">高亮</label>
+
+								<span class="fwr-toolbar-list-tip" style="top: 25px; left: 45px; display: none;"> <strong data-i18n="[html]PCLng.ToolBar.Highlight">高亮</strong><br>
+									<div data-i18n="[html]PCLng.ToolBar.HighlightTip">高亮文本</div>
+								</span>
+							</li>
+							<li id="btnUnderlineAnnotTool" class="fwr-toolbar-icontext-li" style="width: auto;height: auto;float: none;">
+                                <b class="fwr-toolbar-icons fwr-toolbar-underlineannot fwr-toolbar-icontext-b"></b>
+								<label data-i18n="[html]PCLng.ToolBar.Underline">下划线</label>
+								<span class="fwr-toolbar-list-tip" style="top: 25px;left:45px;"> <strong data-i18n="[html]PCLng.ToolBar.Underline">下划线</strong><br>
+									<div data-i18n="[html]PCLng.ToolBar.UnderlineTip">为文本添加下划线</div>
+								</span>
+							</li>
+
+						</ul>
+					</li>
+					<li style="display: list-item;">
+						<p id="btnDrawingToolList" data-id="btnRectangleAnnotTool" class="fwr-toolbar-icons fwr-toolbar-rectangle"></p>
+                        <span class="fwr-toolbar-tip" style="display: none;">
+                            <strong>其他注释</strong><br>
+                            <div data-i18n="[html]PCLng.ToolBar.MoreAnnots.RectangleTip">绘制长方形；按住Shift 键可绘制正方形</div>
+                        </span>
+                        <ul id="showDrawingAnnots" style="padding: 10px 12px 5px; display: none;" class="fwr-toolbar-icontext-form">
+                            <li id="btnRectangleAnnotTool" style="float: none;" class="fwr-toolbar-icontext-li">
+                                <b class="fwr-toolbar-icontext-b fwr-toolbar-icons fwr-toolbar-rectangle"></b>
+                                <label data-i18n="[html]PCLng.ToolBar.MoreAnnots.Rectangle">矩形</label>
+                                <span class="fwr-toolbar-list-tip" style="top: 25px;left:45px;">
+                                    <strong data-i18n="[html]PCLng.ToolBar.MoreAnnots.Rectangle">矩形</strong><br>
+                                    <div data-i18n="[html]PCLng.ToolBar.MoreAnnots.RectangleTip">绘制长方形；按住Shift 键可绘制正方形</div>
+                                </span>
+                            </li>
+                            <li id="btnCircleAnnotTool" style="float: none;" class="fwr-toolbar-icontext-li">
+                                <b class="fwr-toolbar-icontext-b fwr-toolbar-icons fwr-toolbar-ellipse"></b>
+                                <label data-i18n="[html]PCLng.ToolBar.MoreAnnots.Oval">椭圆</label>
+                                <span class="fwr-toolbar-list-tip" style="top: 25px;left:45px;">
+                                    <strong data-i18n="[html]PCLng.ToolBar.MoreAnnots.Oval">椭圆</strong><br>
+                                    <div data-i18n="[html]PCLng.ToolBar.MoreAnnots.OvalTip">绘制椭圆；按住Shift键可绘制圆形</div>
+                                </span>
+                            </li>
+
+							<li id="btnLineAnnotTool" style="float: none;" class="fwr-toolbar-icontext-li">
+                                <b class="fwr-toolbar-icontext-b fwr-toolbar-icons fwr-toolbar-line"></b>
+                                <label data-i18n="[html]PCLng.ToolBar.MoreAnnots.Line">线条</label>
+                                <span class="fwr-toolbar-list-tip" style="top: 25px;left:45px;">
+                                    <strong data-i18n="[html]PCLng.ToolBar.MoreAnnots.Line">线条</strong><br>
+                                    <div data-i18n="[html]PCLng.ToolBar.MoreAnnots.LineTip">绘制直线</div>
+                                </span>
+                            </li>
+                            <li id="btnArrowAnnotTool" style="float: none;" class="fwr-toolbar-icontext-li">
+                                <b class="fwr-toolbar-icontext-b fwr-toolbar-icons fwr-toolbar-arrow"></b>
+                                <label data-i18n="[html]PCLng.ToolBar.MoreAnnots.Arrow">箭头</label>
+                                <span class="fwr-toolbar-list-tip" style="top: 25px;left:45px;">
+                                    <strong data-i18n="[html]PCLng.ToolBar.MoreAnnots.Arrow">箭头</strong><br>
+                                    <div data-i18n="[html]PCLng.ToolBar.MoreAnnots.ArrowTip">绘制箭头</div>
+                                </span>
+                            </li>
+						</ul>
+                        <p class="fwr-toolbar-switch"></p>
+					</li>
+
+					<li style="display: list-item;">
+						<p id="btnComments" class="fwr-toolbar-icons fwr-toolbar-comments"></p> <span class="fwr-toolbar-tip" style="display: none;"> <strong data-i18n="[html]PCLng.ToolBar.Comments.Comments">注释</strong><br>
+							<div data-i18n="PCLng.ToolBar.Comments.CommentsTip">注释管理</div>
+					</span>
+                        <ul id="showAnnotsList" style="padding: 10px 12px 5px; display: none;" class="fwr-toolbar-icontext-form">
+                            <!-- 显示私有注释 -->
+                            <li id="btnShowPrivateComments" class="fwr-toolbar-icontext-li selected">
+                                <label style="margin:0;padding:0">仅显示私有注释</label> <span class="fwr-toolbar-list-tip"> <strong>仅显示私有注释</strong><br>
+									<div>显示文档中的私有注释</div>
+							</span>
+                            </li>
+
+                            <li id="btnShowAllComments" class="fwr-toolbar-icontext-li">
+                                <label style="margin:0;padding:0" data-i18n="[html]PCLng.ToolBar.Comments.Show">显示所有注释</label> <span class="fwr-toolbar-list-tip"> <strong data-i18n="[html]PCLng.ToolBar.Comments.Show">显示所有注释</strong><br>
+									<div data-i18n="[html]PCLng.ToolBar.Comments.ShowTip">显示文档中的全部注释</div>
+							</span>
+                            </li>
+                            <li id="btnHideAllComments" class="fwr-toolbar-icontext-li">
+                                <label style="margin:0;padding:0" data-i18n="[html]PCLng.ToolBar.Comments.Hide">隐藏所有注释</label> <span class="fwr-toolbar-list-tip"> <strong data-i18n="[html]PCLng.ToolBar.Comments.Hide">隐藏所有注释</strong><br>
+									<div data-i18n="[html]PCLng.ToolBar.Comments.HideTip">隐藏文档中的全部注释</div>
+							</span>
+                            </li>
+                        </ul>
+                        <p class="fwr-toolbar-switch"></p>
+					</li>
+
+					<li style="display: list-item;">
+						<p id="btnCommentsType" class="fwr-toolbar-icons fwr-toolbar-exporfdf">
+						</p>
+						<span class="fwr-toolbar-tip" style="display: none;">
+							<strong data-i18n="[html]PCLng.ToolBar.Comments.Comments">注释</strong>
+							<br>
+							<div>
+								公开/私有注释
+							</div>
+						</span>
+                        <ul id="showBtnCommentsType" style="padding: 10px 12px 5px; display: none;" class="fwr-toolbar-icontext-form">
+                            <li id="privateCommentsType" class="fwr-toolbar-icontext-li selected">
+                                <label style="margin:0;padding:0">设为私有注释
+                                </label>
+                                <span class="fwr-toolbar-list-tip">
+                                	<strong>
+                                		私有注释
+                               		</strong>
+                               		<br>
+									<div>
+										私有注释仅自己可见
+									</div>
+								</span>
+                            </li>
+                            <li id="publicCommentsType" class="fwr-toolbar-icontext-li">
+                                <label style="margin:0;padding:0">	设为公开注释
+                                </label>
+                                <span class="fwr-toolbar-list-tip">
+	                                <strong>
+	                                	公开注释
+	                                </strong>
+	                                <br>
+									<div>公开注释所有用户可见</div>
+								</span>
+                            </li>
+                        </ul>
+                        <p class="fwr-toolbar-switch"></p>
+					</li>
+					<li style="display: list-item;">
+						<p id="btnSave" class="fwr-toolbar-icons fwr-toolbar-save disabled"></p> <span class="fwr-toolbar-tip"> <strong data-i18n="[html]PCLng.ToolBar.Save">保存</strong><br>
+							<div data-i18n="[html]PCLng.ToolBar.SaveTip">保存注释数据到数据库</div>
+					</span>
+					</li>
+
+				</ul>
+				<ul class="right" style="padding-right: 0px;">
+				<li style="display: list-item;">
+						<p id="btnRotateSwitch" class="fwr-toolbar-icons fwr-toolbar-rotate"></p> <span class="fwr-toolbar-tip"> <strong data-i18n="[html]PCLng.ToolBar.RotatePages">旋转页面</strong><br>
+							<div data-i18n="[html]PCLng.ToolBar.RotatePagesTip">向左/右旋转页面</div>
+					</span>
+						<ul id="pageRotateList" style="padding: 10px 12px 5px; display: none;" class="fwr-toolbar-icontext-form">
+							<li id="btnLeftRotate" style="float: none;" class="fwr-toolbar-icontext-li">
+								<label style="margin:0;padding:0" data-i18n="[html]PCLng.ToolBar.Rotate.Left">向左旋转</label> <span class="fwr-toolbar-list-tip"> <strong data-i18n="[html]PCLng.ToolBar.Rotate.Left">向左旋转</strong><br>
+									<div data-i18n="[html]PCLng.ToolBar.Rotate.LeftTip">逆时针旋转页面90°</div>
+							</span>
+							</li>
+							<li id="btnRightRotate" style="float: none;" class="fwr-toolbar-icontext-li">
+								<label style="margin:0;padding:0" data-i18n="[html]PCLng.ToolBar.Rotate.Right">向右旋转</label> <span class="fwr-toolbar-list-tip"> <strong data-i18n="[html]PCLng.ToolBar.Rotate.Right">向右旋转</strong><br>
+									<div data-i18n="[html]PCLng.ToolBar.Rotate.RightTip">顺时针旋转页面90°</div>
+							</span>
+							</li>
+						</ul>
+						<p class="fwr-toolbar-switch"></p>
+					</li>
+					<li style="display: list-item;">
+						<p id="btnPageLayout" class="fwr-toolbar-icons fwr-toolbar-pagelayout"></p>
+						<span class="fwr-toolbar-tip"> <strong data-i18n="[html]PCLng.ToolBar.PageLayout.PageLayout">页面布局</strong><br>
+							<div data-i18n="[html]PCLng.ToolBar.PageLayout.PageLayoutTip">设置页面布局，单页或连续页</div>
+						</span>
+						<ul id="showPageLayout" style="padding: 10px 12px 5px; display: none;" class="fwr-toolbar-icontext-form">
+							<li id="btnSinglePage" class="fwr-toolbar-icontext-li" style="width: auto;height: auto;float: none;">
+                                <b class="fwr-toolbar-singlepage fwr-toolbar-icontext-b"></b>
+								<label data-i18n="[html]PCLng.ToolBar.PageLayout.SinglePage">单页</label>
+								<span class="fwr-toolbar-list-tip" style="top: 25px;left:45px;"> <strong data-i18n="[html]PCLng.ToolBar.PageLayout.SinglePage">单页</strong><br>
+									<div data-i18n="[html]PCLng.ToolBar.PageLayout.SinglePageTip">一次浏览一个页面</div>
+								</span>
+							</li>
+							<li id="btnContinuousPage" class="fwr-toolbar-icontext-li selected" style="width: auto;height: auto;float: none;">
+                                <b class="fwr-toolbar-continuespage fwr-toolbar-icontext-b"></b>
+								<label data-i18n="[html]PCLng.ToolBar.PageLayout.ContinuousPage">连续</label>
+								<span class="fwr-toolbar-list-tip" style="top: 25px;left:45px;"> <strong data-i18n="[html]PCLng.ToolBar.PageLayout.ContinuousPage">连续</strong><br>
+									<div data-i18n="[html]PCLng.ToolBar.PageLayout.ContinuousPageTip">通过滚动连续浏览多个页面</div>
+								</span>
+							</li>
+						</ul>
+						<p class="fwr-toolbar-switch"></p>
+					</li>
+
+					<li style="display: list-item;">
+						<p id="btnPrint" class="fwr-toolbar-icons fwr-toolbar-print"></p>
+						<span class="fwr-toolbar-tip"> <strong data-i18n="[html]PCLng.ToolBar.Print">打印</strong><br>
+							<div data-i18n="[html]PCLng.ToolBar.PrintTip">打印全部页面或者部分页面</div>
+					</span>
+					</li>
+
+					<li style="display: list-item;">
+						<p id="btnStamp" class="fwr-toolbar-icons fwr-toolbar-inksign"></p>
+						<span class="fwr-toolbar-tip">
+						<strong>分享链接</strong><br>
+							<div>分享文档链接</div>
+						</span>
+						<button id="share_link_btn" style="display:none" data-clipboard-action="copy" data-clipboard-target="#share_link"></button>
+
+
+					</li>
+
+					<li style="display: list-item;">
+						<p id="fullsceen" class="fwr-toolbar-icons fwr-toolbar-fullsceen disabled">
+						</p>
+						<span class="fwr-toolbar-tip"> <strong data-i18n="[html]PCLng.ToolBar.FullScreen">全屏</strong><br>
+								<div data-i18n="[html]PCLng.ToolBar.FullScreenToolTip">全屏显示</div>
+						</span>
+					</li>
+				</ul>
+				<div class="fwr-more-icons" id="btnMoreTools" style="display: none;"></div>
+				<div class="fwr-more-tools" style="display: none;">
+					<ul class="left">
+					</ul>
+					<ul class="right" style="padding-right: 0px;">
+					</ul>
+				</div>
+			</div>
+			<div id="frame"><div id="fields_highlight" class="fwr_fields_highlight_div" style="display:none;"><span class="leftPanel">This file contains interactive form fields.</span><div class="rightPanel"><button class="butClose" id="btnHighlightClose" type="button"></button><button class="fwr_button butHighlight" id="btnHighlightFormField" type="button">Highlight Fields</button></div></div>
+				<div class="fwr-inksign-list" id="inkSignList" style="height: 587px; display: none;"><div class="fwr-Nav-panel-title">签名列表</div><a class="close-inksign"></a><div id="inkSignArea" class="fwr-inksign-panel" style="overflow: hidden; padding: 0px; height: 549px; width: 100px;"><div class="fwrJspContainer" style="width: 100px; height: 549px;"><div class="fwrJspPane" style="padding: 0px; top: 0px; left: 0px; width: 100px;"><ul><li><div class="inksign-box"><span class="fwr-icons-inksign-list inksign-add"></span></div></li></ul></div></div></div></div>
+
+				<div id="navigation" class="fwr-navigation" style="height: 587px; left: 0px;"><ul><li id="tabs-bookmark" style="display: list-item;" data-lang="PCLng.Panel.Bookmark" data-id="docViewer_fxBookmarkPanel"><p id="bookmarkBtn" class="fwr-Nav-bookmark fwr-Nav-icons"></p><span class="fwr-navigation-tip"> <strong data-i18n="[html]PCLng.Panel.Bookmark">书签</strong><br><div data-i18n="[html]PCLng.Panel.BookmarkTip">查看书签</div></span></li><li id="tabs-thumb" style="display: list-item;" data-lang="PCLng.Panel.Thumbnails" data-id="docViewer_fxThumbpanel"><p id="thumbnailBtn" class="fwr-Nav-thumbnail fwr-Nav-icons"></p><span class="fwr-navigation-tip"> <strong data-i18n="[html]PCLng.Panel.Thumbnails">缩略图</strong><br><div data-i18n="[html]PCLng.Panel.ThumbnailsTip">查看缩略图</div></span></li><li id="tabs-comment-list" style="display: list-item;" data-lang="PCLng.Panel.CommentList" data-id="docViewer_fxCommentListPanel"><p id="commentListBtn" class="fwr-Nav-commentlist  fwr-Nav-icons"></p><span class="fwr-navigation-tip"> <strong data-i18n="[html]PCLng.Panel.CommentList">注释</strong><br><div data-i18n="[html]PCLng.Panel.CommentListTip">查看所有注释</div></span></li><li id="tabs-search" style="display: list-item;" data-lang="PCLng.Panel.Search" data-id="searchPanel"><p id="searchBtn" class="fwr-Nav-search fwr-Nav-icons"></p><span class="fwr-navigation-tip"> <strong data-i18n="[html]PCLng.Panel.Search">查找</strong><br><div data-i18n="[html]PCLng.Panel.SearchTip">查看查找结果</div></span></li><li id="tabs-offline" style="display: list-item;" data-lang="缓存文档" data-id="navigation-offline-panel"><p id="navigation-offline-button" class="fwr-Nav-offline fwr-Nav-icons"></p><span class="fwr-navigation-tip"> <strong data-i18n="undefined">缓存文档</strong><br><div data-i18n="打开，添加或删除缓存文档">打开，添加或删除缓存文档</div></span></li></ul></div><div id="navigationPanel" class="fwr-Nav-panel" style="display: none; width: 270px; height: 587px;"><div class="fwr-drag-box" id="fwr_drag_box"></div><div class="fwr-drag-mask" id="fwr_drag_box"></div><div id="navigationPanelTitle" class="fwr-Nav-panel-title" style="width: 80%;overflow: hidden;text-overflow: ellipsis;"></div><div id="navigationPanelClose" class="fwr-Nav-panel-close"></div><div id="searchPanel" class="fwr-search-panel" style="display: none; width: 270px; height: 549px;"><div id="searchArea"><div class="fwr-search-tip" data-i18n="[html]PCLng.Panel.SearchFor">请输入您要查找的单词或短语。</div> <div id="fwr_search_box_buttom_frame" class="fwr_search_box_buttom_frame fwr-search-tip">  <input id="searchTextInput" class="fwr_search_box" type="text" autocomplete="off" title="" maxlength="255"> <span class="fwr_search_split_button" title="" tabindex="0" id="FindSplitButton-Small"> <a tabindex="-1" style="float: left; height: 100%;" title=""> <span style="float: left; margin-top: 2px;" id="searchBtnIcon" class="fwr-search-icon"></span></a></span></div> <div id="searchResultTip" style="margin-left: 10px; display: inline-block;"></div> <div style="display: inline-block; width: 100%;"> <div class="fwr-search-next fwr-icons-lastnext" id="btnSearchNext"></div> <div class="fwr-search-last fwr-icons-lastnext" id="btnSearchPrevious"></div> <div class="fwr-icons-searching" style="display: none;"></div></div></div></div><div id="navigation-offline-panel" style="height:100%; display:none;"><div><div id="fwr-offlinepanel-toolbar"><input type="checkbox" title="选择全部"><div class="fwr-offlinepanel-btndel" title="删除选中的缓存文档"></div><div class="fwr-offlinepanel-btninadd" title="缓存一个新文档。最多允许缓存10个。" style="display: none;"></div><div class="fwr-offlinepanel-btnadd" title="缓存一个新文档。最多允许缓存10个。" style="display: block;"></div></div><div class="fwr-offlinepanel-split"></div><div id="fwr-offlinepanel-filelist"></div></div></div><div id="docViewer_fxThumbpanel" class="fwr-thumb-panel" style="display: none; overflow: hidden; padding: 0px; height: 559px; width: 100px;"><div class="fwrJspContainer" style="width: 100px; height: 559px;"><div class="fwrJspPane" style="padding: 0px; top: 0px; left: 0px; width: 100px;"><div style="height: 28998px; position: relative;"></div></div></div></div><div id="docViewer_fxBookmarkPanel" class="fwr-bookmark-panel" style="display: none; height: 559px; overflow: hidden; outline: none; width: 271px;"></div><div id="docViewer_fxCommentListPanel" class="fwr-commentlist-panel" style="height: 587px; overflow: hidden; outline: none; display: none; width: 271px;"><div class="dtreebar"><span class="dtree-openall mr12" title="展开所有"></span><span class="dtree-closeall mr12" title="收起所有"></span><em>0</em><span class="ml5">注释</span></div><div class="hide-tip" style="display: none;">无结果。<br>某些注释已经被隐藏了，如果您想要查看它们，请将其显示出来</div><div class="dtree-wrap" style="width: 271px; height: 529px;"><div class="dtree-content"><ul></ul></div></div></div></div><div id="docViewer" style="background: rgb(171, 171, 171); margin-right: 0px; width: 1317px; height: 587px; margin-left: 49px;" class="fwr-modal-open"><div id="docViewer_ViewContainer" tabindex="0" class="fwr-pages scroll-pane jspScrollable fwr-hand-cursor" style="position: relative; height: 587px; overflow: hidden; padding: 0px; outline: none; top: 0px; width: 1317px;"><div class="fwrJspContainer" style="width: 1317px; height: 587px;"><div class="fwrJspPane" style="padding: 0px; top: -1760px; left: 0px; width: 1295px;"><div class="fwr-page-invisible" style="width: 100%;"><div class="fwr-page fwr-page-tiles" data-width="638.6666666666666" data-height="902.6666666666666" id="docViewer_ViewContainer_PageContainer_0" style="position: relative; height: 903px; width: 639px; margin-left: 328px;"><div class="tile_layers"><div class="tiles-layer tiles-layer-100" style="overflow: hidden; width: 638.667px; height: 902.667px; transform: scale(1); transform-origin: 0px 0px 0px; position: absolute; top: 0px; z-index: 1; display: block;"><div style="width: 800px;"><div style="width: 400px; height: 400px; float: left; text-align: left; vertical-align: top;"><img height="400" width="400" class="tiles-1-1-1" style="vertical-align: top;" src="http://159.226.241.32:8093/asserts/ad1ae1e0f72040e9949187cc8e61ae55/image/0/tiles/100/400/1/1?accessToken=accessToken"></div><div style="width: 400px; height: 400px; float: left; text-align: left; vertical-align: top;"><img height="400" width="238.66666666666663" class="tiles-1-2-1" style="vertical-align: top;" src="http://159.226.241.32:8093/asserts/ad1ae1e0f72040e9949187cc8e61ae55/image/0/tiles/100/400/2/1?accessToken=accessToken"></div></div><div style="width: 800px;"><div style="width: 400px; height: 400px; float: left; text-align: left; vertical-align: top;"><img height="400" width="400" class="tiles-1-1-2" style="vertical-align: top;" src="http://159.226.241.32:8093/asserts/ad1ae1e0f72040e9949187cc8e61ae55/image/0/tiles/100/400/1/2?accessToken=accessToken"></div><div style="width: 400px; height: 400px; float: left; text-align: left; vertical-align: top;"><img height="400" width="238.66666666666663" class="tiles-1-2-2" style="vertical-align: top;" src="http://159.226.241.32:8093/asserts/ad1ae1e0f72040e9949187cc8e61ae55/image/0/tiles/100/400/2/2?accessToken=accessToken"></div></div><div style="width: 800px;"><div style="width: 400px; height: 400px; float: left; text-align: left; vertical-align: top;"><img height="102.66666666666663" width="400" class="tiles-1-1-3" style="vertical-align: top;" src="http://159.226.241.32:8093/asserts/ad1ae1e0f72040e9949187cc8e61ae55/image/0/tiles/100/400/1/3?accessToken=accessToken"></div><div style="width: 400px; height: 400px; float: left; text-align: left; vertical-align: top;"><img height="102.66666666666663" width="238.66666666666663" class="tiles-1-2-3" style="vertical-align: top;" src="http://159.226.241.32:8093/asserts/ad1ae1e0f72040e9949187cc8e61ae55/image/0/tiles/100/400/2/3?accessToken=accessToken"></div></div></div></div><div id="docViewer_ViewContainer_Wrap_0" class="fwr-page border  fwr-hidden" style="width:100%;height:100%"></div><img alt="" src="http://159.226.241.32:8093/asserts/ad1ae1e0f72040e9949187cc8e61ae55/image/0/thumb?accessToken=accessToken&amp;formMode=true" id="docViewer_ViewContainer_BG_0" class="border  fwr-page-bg-image" style="width:100%;height:100%;background-size:cover"><div id="docViewer_ViewContainer_Loader_0" class="fwr-page-loading" style="margin-left: -12px; margin-top: -176px; display: none;"> <p class="fwr-page-loadinfo">加载字体中...</p></div><div id="docViewer_ViewContainer_TrialWatermark_0" class="fwr-trial-watermark"></div><div id="docViewer_ViewContainer_Watermark_0" class="fwr-watermark" style="display: none;"></div><div id="docViewer_ViewContainer_UserWatermark_0" style="display: none;"></div><div id="docViewer_ViewContainer_PageContainer_0_SignatureContainer"> </div><div id="docViewer_ViewContainer_PageContainer_0_SignatureSigned"> </div><div id="docViewer_ViewContainer_PageContainer_0_inkSignedContainer"> </div><div id="docViewer_ViewContainer_PageContainer_0_AnnotsContainer"></div></div></div><div class="" style="width: 100%;"><div class="fwr-page fwr-page-tiles" data-width="638.6666666666666" data-height="977.3333333333333" id="docViewer_ViewContainer_PageContainer_1" style="position: relative; height: 978px; width: 639px; margin-left: 328px;"><div class="tile_layers"><div class="tiles-layer tiles-layer-100" style="overflow: hidden; width: 638.667px; height: 977.333px; transform: scale(1); transform-origin: 0px 0px 0px; position: absolute; top: 0px; z-index: 1; display: block;"><div style="width: 800px;"><div style="width: 400px; height: 400px; float: left; text-align: left; vertical-align: top;"><img height="400" width="400" class="tiles-1-1-1" style="vertical-align: top;" src="http://159.226.241.32:8093/asserts/ad1ae1e0f72040e9949187cc8e61ae55/image/1/tiles/100/400/1/1?accessToken=accessToken"></div><div style="width: 400px; height: 400px; float: left; text-align: left; vertical-align: top;"><img height="400" width="238.66666666666663" class="tiles-1-2-1" style="vertical-align: top;" src="http://159.226.241.32:8093/asserts/ad1ae1e0f72040e9949187cc8e61ae55/image/1/tiles/100/400/2/1?accessToken=accessToken"></div></div><div style="width: 800px;"><div style="width: 400px; height: 400px; float: left; text-align: left; vertical-align: top;"><img height="400" width="400" class="tiles-1-1-2" style="vertical-align: top;" src="http://159.226.241.32:8093/asserts/ad1ae1e0f72040e9949187cc8e61ae55/image/1/tiles/100/400/1/2?accessToken=accessToken"></div><div style="width: 400px; height: 400px; float: left; text-align: left; vertical-align: top;"><img height="400" width="238.66666666666663" class="tiles-1-2-2" style="vertical-align: top;" src="http://159.226.241.32:8093/asserts/ad1ae1e0f72040e9949187cc8e61ae55/image/1/tiles/100/400/2/2?accessToken=accessToken"></div></div><div style="width: 800px;"><div style="width: 400px; height: 400px; float: left; text-align: left; vertical-align: top;"><img height="177.33333333333326" width="400" class="tiles-1-1-3" style="vertical-align: top;" src="http://159.226.241.32:8093/asserts/ad1ae1e0f72040e9949187cc8e61ae55/image/1/tiles/100/400/1/3?accessToken=accessToken"></div><div style="width: 400px; height: 400px; float: left; text-align: left; vertical-align: top;"><img height="177.33333333333326" width="238.66666666666663" class="tiles-1-2-3" style="vertical-align: top;" src="http://159.226.241.32:8093/asserts/ad1ae1e0f72040e9949187cc8e61ae55/image/1/tiles/100/400/2/3?accessToken=accessToken"></div></div></div></div><div id="docViewer_ViewContainer_Wrap_1" class="fwr-page border  fwr-hidden" style="width:100%;height:100%"></div><img alt="" src="http://159.226.241.32:8093/asserts/ad1ae1e0f72040e9949187cc8e61ae55/image/1/thumb?accessToken=accessToken&amp;formMode=true" id="docViewer_ViewContainer_BG_1" class="border  fwr-page-bg-image" style="width:100%;height:100%;background-size:cover"><div id="docViewer_ViewContainer_Loader_1" class="fwr-page-loading" style="display: none;"> <p class="fwr-page-loadinfo">加载字体中...</p></div><div id="docViewer_ViewContainer_TrialWatermark_1" class="fwr-trial-watermark"></div><div id="docViewer_ViewContainer_Watermark_1" class="fwr-watermark" style="display: none;"></div><div id="docViewer_ViewContainer_UserWatermark_1" style="display: none;"></div><div id="docViewer_ViewContainer_PageContainer_1_SignatureContainer"> </div><div id="docViewer_ViewContainer_PageContainer_1_SignatureSigned"> </div><div id="docViewer_ViewContainer_PageContainer_1_inkSignedContainer"> </div><div id="docViewer_ViewContainer_PageContainer_1_AnnotsContainer"></div></div></div><div class="" style="width: 100%;"><div class="fwr-page fwr-page-tiles" data-width="638.6666666666666" data-height="902.6666666666666" id="docViewer_ViewContainer_PageContainer_2" style="position: relative; height: 903px; width: 639px; margin-left: 328px;"><div class="tile_layers"><div class="tiles-layer tiles-layer-100" style="overflow: hidden; width: 638.667px; height: 902.667px; transform: scale(1); transform-origin: 0px 0px 0px; position: absolute; top: 0px; z-index: 1; display: block;"><div style="width: 800px;"><div style="width: 400px; height: 400px; float: left; text-align: left; vertical-align: top;"><img height="400" width="400" class="tiles-1-1-1" style="vertical-align: top;" src="http://159.226.241.32:8093/asserts/ad1ae1e0f72040e9949187cc8e61ae55/image/2/tiles/100/400/1/1?accessToken=accessToken"></div><div style="width: 400px; height: 400px; float: left; text-align: left; vertical-align: top;"><img height="400" width="238.66666666666663" class="tiles-1-2-1" style="vertical-align: top;" src="http://159.226.241.32:8093/asserts/ad1ae1e0f72040e9949187cc8e61ae55/image/2/tiles/100/400/2/1?accessToken=accessToken"></div></div><div style="width: 800px;"><div style="width: 400px; height: 400px; float: left; text-align: left; vertical-align: top;"><img height="400" width="400" class="tiles-1-1-2" style="vertical-align: top;" src="http://159.226.241.32:8093/asserts/ad1ae1e0f72040e9949187cc8e61ae55/image/2/tiles/100/400/1/2?accessToken=accessToken"></div><div style="width: 400px; height: 400px; float: left; text-align: left; vertical-align: top;"><img height="400" width="238.66666666666663" class="tiles-1-2-2" style="vertical-align: top;" src="http://159.226.241.32:8093/asserts/ad1ae1e0f72040e9949187cc8e61ae55/image/2/tiles/100/400/2/2?accessToken=accessToken"></div></div><div style="width: 800px;"><div style="width: 400px; height: 400px; float: left; text-align: left; vertical-align: top;"><img height="102.66666666666663" width="400" class="tiles-1-1-3" style="vertical-align: top;" src="http://159.226.241.32:8093/asserts/ad1ae1e0f72040e9949187cc8e61ae55/image/2/tiles/100/400/1/3?accessToken=accessToken"></div><div style="width: 400px; height: 400px; float: left; text-align: left; vertical-align: top;"><img height="102.66666666666663" width="238.66666666666663" class="tiles-1-2-3" style="vertical-align: top;" src="http://159.226.241.32:8093/asserts/ad1ae1e0f72040e9949187cc8e61ae55/image/2/tiles/100/400/2/3?accessToken=accessToken"></div></div></div></div><div id="docViewer_ViewContainer_Wrap_2" class="fwr-page border  fwr-hidden" style="width:100%;height:100%"></div><img alt="" src="http://159.226.241.32:8093/asserts/ad1ae1e0f72040e9949187cc8e61ae55/image/2/thumb?accessToken=accessToken&amp;formMode=true" id="docViewer_ViewContainer_BG_2" class="border  fwr-page-bg-image" style="width:100%;height:100%;background-size:cover"><div id="docViewer_ViewContainer_Loader_2" class="fwr-page-loading" style="display: none;"> <p class="fwr-page-loadinfo">加载字体中...</p></div><div id="docViewer_ViewContainer_TrialWatermark_2" class="fwr-trial-watermark"></div><div id="docViewer_ViewContainer_Watermark_2" class="fwr-watermark" style="display: none;"></div><div id="docViewer_ViewContainer_UserWatermark_2" style="display: none;"></div><div id="docViewer_ViewContainer_PageContainer_2_SignatureContainer"> </div><div id="docViewer_ViewContainer_PageContainer_2_SignatureSigned"> </div><div id="docViewer_ViewContainer_PageContainer_2_inkSignedContainer"> </div><div id="docViewer_ViewContainer_PageContainer_2_AnnotsContainer"></div></div></div><div class="fwr-page-invisible" style="width: 100%;"><div class="fwr-page fwr-page-tiles" data-width="638.6666666666666" data-height="902.6666666666666" id="docViewer_ViewContainer_PageContainer_3" style="position: relative; height: 903px; width: 639px; margin-left: 328px;"><div class="tile_layers"><div class="tiles-layer tiles-layer-100" style="overflow: hidden; width: 638.667px; height: 902.667px; transform: scale(1); transform-origin: 0px 0px 0px; position: absolute; top: 0px; z-index: 1; display: block;"><div style="width: 800px;"><div style="width: 400px; height: 400px; float: left; text-align: left; vertical-align: top;"><img height="400" width="400" class="tiles-1-1-1" style="vertical-align: top; display: none;"></div><div style="width: 400px; height: 400px; float: left; text-align: left; vertical-align: top;"><img height="400" width="238.66666666666663" class="tiles-1-2-1" style="vertical-align: top; display: none;"></div></div><div style="width: 800px;"><div style="width: 400px; height: 400px; float: left; text-align: left; vertical-align: top;"><img height="400" width="400" class="tiles-1-1-2" style="vertical-align: top; display: none;"></div><div style="width: 400px; height: 400px; float: left; text-align: left; vertical-align: top;"><img height="400" width="238.66666666666663" class="tiles-1-2-2" style="vertical-align: top; display: none;"></div></div><div style="width: 800px;"><div style="width: 400px; height: 400px; float: left; text-align: left; vertical-align: top;"><img height="102.66666666666663" width="400" class="tiles-1-1-3" style="vertical-align: top; display: none;"></div><div style="width: 400px; height: 400px; float: left; text-align: left; vertical-align: top;"><img height="102.66666666666663" width="238.66666666666663" class="tiles-1-2-3" style="vertical-align: top; display: none;"></div></div></div></div><div id="docViewer_ViewContainer_Wrap_3" class="fwr-page border  fwr-hidden" style="width:100%;height:100%"></div><img alt="" src="http://159.226.241.32:8093/asserts/ad1ae1e0f72040e9949187cc8e61ae55/image/3/thumb?accessToken=accessToken&amp;formMode=true" id="docViewer_ViewContainer_BG_3" class="border  fwr-page-bg-image" style="width:100%;height:100%;background-size:cover"><div id="docViewer_ViewContainer_Loader_3" class="fwr-page-loading" style="display: none;"> <p class="fwr-page-loadinfo">加载字体中...</p></div><div id="docViewer_ViewContainer_TrialWatermark_3" class="fwr-trial-watermark"></div><div id="docViewer_ViewContainer_Watermark_3" class="fwr-watermark" style="display: none;"></div><div id="docViewer_ViewContainer_UserWatermark_3" style="display: none;"></div><div id="docViewer_ViewContainer_PageContainer_3_SignatureContainer"> </div><div id="docViewer_ViewContainer_PageContainer_3_SignatureSigned"> </div><div id="docViewer_ViewContainer_PageContainer_3_inkSignedContainer"> </div><div id="docViewer_ViewContainer_PageContainer_3_AnnotsContainer"></div></div></div><div class="fwr-page-invisible" style="width: 100%;"><div class="fwr-page" data-width="638.6666666666666" data-height="902.6666666666666" id="docViewer_ViewContainer_PageContainer_4" style="position: relative; height: 903px; width: 639px; margin-left: 328px;"><div id="docViewer_ViewContainer_Wrap_4" class="fwr-page border " style="width:100%;height:100%"></div><img alt="" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" id="docViewer_ViewContainer_BG_4" class="border  fwr-hidden fwr-page-bg-image" style="width:100%;height:100%;background-size:cover"><div id="docViewer_ViewContainer_Loader_4" class="fwr-page-loading"> <p class="fwr-page-loadinfo">加载字体中...</p></div><div id="docViewer_ViewContainer_TrialWatermark_4" class="fwr-trial-watermark"></div><div id="docViewer_ViewContainer_Watermark_4" class="fwr-watermark" style="display: none;"></div><div id="docViewer_ViewContainer_UserWatermark_4" style="display: none;"></div></div></div><div class="fwr-page-invisible" style="width: 100%;"><div class="fwr-page" data-width="638.6666666666666" data-height="902.6666666666666" id="docViewer_ViewContainer_PageContainer_5" style="position: relative; height: 903px; width: 639px; margin-left: 328px;"><div id="docViewer_ViewContainer_Wrap_5" class="fwr-page border " style="width:100%;height:100%"></div><img alt="" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" id="docViewer_ViewContainer_BG_5" class="border  fwr-hidden fwr-page-bg-image" style="width:100%;height:100%;background-size:cover"><div id="docViewer_ViewContainer_Loader_5" class="fwr-page-loading"> <p class="fwr-page-loadinfo">加载字体中...</p></div><div id="docViewer_ViewContainer_TrialWatermark_5" class="fwr-trial-watermark"></div><div id="docViewer_ViewContainer_Watermark_5" class="fwr-watermark" style="display: none;"></div><div id="docViewer_ViewContainer_UserWatermark_5" style="display: none;"></div></div></div><div class="fwr-page-invisible" style="width: 100%;"><div class="fwr-page" data-width="638.6666666666666" data-height="902.6666666666666" id="docViewer_ViewContainer_PageContainer_6" style="position: relative; height: 903px; width: 639px; margin-left: 328px;"><div id="docViewer_ViewContainer_Wrap_6" class="fwr-page border " style="width:100%;height:100%"></div><img alt="" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" id="docViewer_ViewContainer_BG_6" class="border  fwr-hidden fwr-page-bg-image" style="width:100%;height:100%;background-size:cover"><div id="docViewer_ViewContainer_Loader_6" class="fwr-page-loading"> <p class="fwr-page-loadinfo">加载字体中...</p></div><div id="docViewer_ViewContainer_TrialWatermark_6" class="fwr-trial-watermark"></div><div id="docViewer_ViewContainer_Watermark_6" class="fwr-watermark" style="display: none;"></div><div id="docViewer_ViewContainer_UserWatermark_6" style="display: none;"></div></div></div><div class="fwr-page-invisible" style="width: 100%;"><div class="fwr-page" data-width="638.6666666666666" data-height="902.6666666666666" id="docViewer_ViewContainer_PageContainer_7" style="position: relative; height: 903px; width: 639px; margin-left: 328px;"><div id="docViewer_ViewContainer_Wrap_7" class="fwr-page border " style="width:100%;height:100%"></div><img alt="" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" id="docViewer_ViewContainer_BG_7" class="border  fwr-hidden fwr-page-bg-image" style="width:100%;height:100%;background-size:cover"><div id="docViewer_ViewContainer_Loader_7" class="fwr-page-loading"> <p class="fwr-page-loadinfo">加载字体中...</p></div><div id="docViewer_ViewContainer_TrialWatermark_7" class="fwr-trial-watermark"></div><div id="docViewer_ViewContainer_Watermark_7" class="fwr-watermark" style="display: none;"></div><div id="docViewer_ViewContainer_UserWatermark_7" style="display: none;"></div></div></div><div class="fwr-page-invisible" style="width: 100%;"><div class="fwr-page" data-width="638.6666666666666" data-height="902.6666666666666" id="docViewer_ViewContainer_PageContainer_8" style="position: relative; height: 903px; width: 639px; margin-left: 328px;"><div id="docViewer_ViewContainer_Wrap_8" class="fwr-page border " style="width:100%;height:100%"></div><img alt="" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" id="docViewer_ViewContainer_BG_8" class="border  fwr-hidden fwr-page-bg-image" style="width:100%;height:100%;background-size:cover"><div id="docViewer_ViewContainer_Loader_8" class="fwr-page-loading"> <p class="fwr-page-loadinfo">加载字体中...</p></div><div id="docViewer_ViewContainer_TrialWatermark_8" class="fwr-trial-watermark"></div><div id="docViewer_ViewContainer_Watermark_8" class="fwr-watermark" style="display: none;"></div><div id="docViewer_ViewContainer_UserWatermark_8" style="display: none;"></div></div></div><div class="fwr-page-invisible" style="width: 100%;"><div class="fwr-page fwr-page-tiles" data-width="638.6666666666666" data-height="902.6666666666666" id="docViewer_ViewContainer_PageContainer_9" style="position: relative; height: 903px; width: 639px; margin-left: 328px;"><div class="tile_layers"><div class="tiles-layer tiles-layer-100" style="overflow: hidden; width: 638.667px; height: 902.667px; transform: scale(1); transform-origin: 0px 0px 0px; position: absolute; top: 0px; z-index: 1; display: block;"><div style="width: 800px;"><div style="width: 400px; height: 400px; float: left; text-align: left; vertical-align: top;"><img height="400" width="400" class="tiles-1-1-1" style="vertical-align: top; display: none;"></div><div style="width: 400px; height: 400px; float: left; text-align: left; vertical-align: top;"><img height="400" width="238.66666666666663" class="tiles-1-2-1" style="vertical-align: top; display: none;"></div></div><div style="width: 800px;"><div style="width: 400px; height: 400px; float: left; text-align: left; vertical-align: top;"><img height="400" width="400" class="tiles-1-1-2" style="vertical-align: top;" src="http://159.226.241.32:8093/asserts/ad1ae1e0f72040e9949187cc8e61ae55/image/9/tiles/100/400/1/2?accessToken=accessToken"></div><div style="width: 400px; height: 400px; float: left; text-align: left; vertical-align: top;"><img height="400" width="238.66666666666663" class="tiles-1-2-2" style="vertical-align: top;" src="http://159.226.241.32:8093/asserts/ad1ae1e0f72040e9949187cc8e61ae55/image/9/tiles/100/400/2/2?accessToken=accessToken"></div></div><div style="width: 800px;"><div style="width: 400px; height: 400px; float: left; text-align: left; vertical-align: top;"><img height="102.66666666666663" width="400" class="tiles-1-1-3" style="vertical-align: top;" src="http://159.226.241.32:8093/asserts/ad1ae1e0f72040e9949187cc8e61ae55/image/9/tiles/100/400/1/3?accessToken=accessToken"></div><div style="width: 400px; height: 400px; float: left; text-align: left; vertical-align: top;"><img height="102.66666666666663" width="238.66666666666663" class="tiles-1-2-3" style="vertical-align: top;" src="http://159.226.241.32:8093/asserts/ad1ae1e0f72040e9949187cc8e61ae55/image/9/tiles/100/400/2/3?accessToken=accessToken"></div></div></div></div><div id="docViewer_ViewContainer_Wrap_9" class="fwr-page border  fwr-hidden" style="width:100%;height:100%"></div><img alt="" src="http://159.226.241.32:8093/asserts/ad1ae1e0f72040e9949187cc8e61ae55/image/9/thumb?accessToken=accessToken&amp;formMode=true" id="docViewer_ViewContainer_BG_9" class="border  fwr-page-bg-image" style="width:100%;height:100%;background-size:cover"><div id="docViewer_ViewContainer_Loader_9" class="fwr-page-loading" style="display: none;"> <p class="fwr-page-loadinfo">加载字体中...</p></div><div id="docViewer_ViewContainer_TrialWatermark_9" class="fwr-trial-watermark"></div><div id="docViewer_ViewContainer_Watermark_9" class="fwr-watermark" style="display: none;"></div><div id="docViewer_ViewContainer_UserWatermark_9" style="display: none;"></div><div id="docViewer_ViewContainer_PageContainer_9_SignatureContainer"> </div><div id="docViewer_ViewContainer_PageContainer_9_SignatureSigned"> </div><div id="docViewer_ViewContainer_PageContainer_9_inkSignedContainer"> </div><div id="docViewer_ViewContainer_PageContainer_9_AnnotsContainer"></div></div></div><div class="fwr-page-invisible" style="width: 100%;"><div class="fwr-page fwr-page-tiles" data-width="638.6666666666666" data-height="902.6666666666666" id="docViewer_ViewContainer_PageContainer_10" style="position: relative; height: 903px; width: 639px; margin-left: 328px;"><div class="tile_layers"><div class="tiles-layer tiles-layer-100" style="overflow: hidden; width: 638.667px; height: 902.667px; transform: scale(1); transform-origin: 0px 0px 0px; position: absolute; top: 0px; z-index: 1; display: block;"><div style="width: 800px;"><div style="width: 400px; height: 400px; float: left; text-align: left; vertical-align: top;"><img height="400" width="400" class="tiles-1-1-1" style="vertical-align: top;" src="http://159.226.241.32:8093/asserts/ad1ae1e0f72040e9949187cc8e61ae55/image/10/tiles/100/400/1/1?accessToken=accessToken"></div><div style="width: 400px; height: 400px; float: left; text-align: left; vertical-align: top;"><img height="400" width="238.66666666666663" class="tiles-1-2-1" style="vertical-align: top;" src="http://159.226.241.32:8093/asserts/ad1ae1e0f72040e9949187cc8e61ae55/image/10/tiles/100/400/2/1?accessToken=accessToken"></div></div><div style="width: 800px;"><div style="width: 400px; height: 400px; float: left; text-align: left; vertical-align: top;"><img height="400" width="400" class="tiles-1-1-2" style="vertical-align: top;" src="http://159.226.241.32:8093/asserts/ad1ae1e0f72040e9949187cc8e61ae55/image/10/tiles/100/400/1/2?accessToken=accessToken"></div><div style="width: 400px; height: 400px; float: left; text-align: left; vertical-align: top;"><img height="400" width="238.66666666666663" class="tiles-1-2-2" style="vertical-align: top;" src="http://159.226.241.32:8093/asserts/ad1ae1e0f72040e9949187cc8e61ae55/image/10/tiles/100/400/2/2?accessToken=accessToken"></div></div><div style="width: 800px;"><div style="width: 400px; height: 400px; float: left; text-align: left; vertical-align: top;"><img height="102.66666666666663" width="400" class="tiles-1-1-3" style="vertical-align: top;" src="http://159.226.241.32:8093/asserts/ad1ae1e0f72040e9949187cc8e61ae55/image/10/tiles/100/400/1/3?accessToken=accessToken"></div><div style="width: 400px; height: 400px; float: left; text-align: left; vertical-align: top;"><img height="102.66666666666663" width="238.66666666666663" class="tiles-1-2-3" style="vertical-align: top;" src="http://159.226.241.32:8093/asserts/ad1ae1e0f72040e9949187cc8e61ae55/image/10/tiles/100/400/2/3?accessToken=accessToken"></div></div></div></div><div id="docViewer_ViewContainer_Wrap_10" class="fwr-page border  fwr-hidden" style="width:100%;height:100%"></div><img alt="" src="http://159.226.241.32:8093/asserts/ad1ae1e0f72040e9949187cc8e61ae55/image/10/thumb?accessToken=accessToken&amp;formMode=true" id="docViewer_ViewContainer_BG_10" class="border  fwr-page-bg-image" style="width:100%;height:100%;background-size:cover"><div id="docViewer_ViewContainer_Loader_10" class="fwr-page-loading" style="margin-left: -12px; margin-top: 274.922px; display: none;"> <p class="fwr-page-loadinfo">加载字体中...</p></div><div id="docViewer_ViewContainer_TrialWatermark_10" class="fwr-trial-watermark"></div><div id="docViewer_ViewContainer_Watermark_10" class="fwr-watermark" style="display: none;"></div><div id="docViewer_ViewContainer_UserWatermark_10" style="display: none;"></div><div id="docViewer_ViewContainer_PageContainer_10_SignatureContainer"> </div><div id="docViewer_ViewContainer_PageContainer_10_SignatureSigned"> </div><div id="docViewer_ViewContainer_PageContainer_10_inkSignedContainer"> </div><div id="docViewer_ViewContainer_PageContainer_10_AnnotsContainer"></div></div></div><div class="fwr-page-invisible" style="width: 100%;"><div class="fwr-page fwr-page-tiles" data-width="638.6666666666666" data-height="902.6666666666666" id="docViewer_ViewContainer_PageContainer_11" style="position: relative; height: 903px; width: 639px; margin-left: 328px;"><div class="tile_layers"><div class="tiles-layer tiles-layer-100" style="overflow: hidden; width: 638.667px; height: 902.667px; transform: scale(1); transform-origin: 0px 0px 0px; position: absolute; top: 0px; z-index: 1; display: block;"><div style="width: 800px;"><div style="width: 400px; height: 400px; float: left; text-align: left; vertical-align: top;"><img height="400" width="400" class="tiles-1-1-1" style="vertical-align: top;" src="http://159.226.241.32:8093/asserts/ad1ae1e0f72040e9949187cc8e61ae55/image/11/tiles/100/400/1/1?accessToken=accessToken"></div><div style="width: 400px; height: 400px; float: left; text-align: left; vertical-align: top;"><img height="400" width="238.66666666666663" class="tiles-1-2-1" style="vertical-align: top;" src="http://159.226.241.32:8093/asserts/ad1ae1e0f72040e9949187cc8e61ae55/image/11/tiles/100/400/2/1?accessToken=accessToken"></div></div><div style="width: 800px;"><div style="width: 400px; height: 400px; float: left; text-align: left; vertical-align: top;"><img height="400" width="400" class="tiles-1-1-2" style="vertical-align: top;" src="http://159.226.241.32:8093/asserts/ad1ae1e0f72040e9949187cc8e61ae55/image/11/tiles/100/400/1/2?accessToken=accessToken"></div><div style="width: 400px; height: 400px; float: left; text-align: left; vertical-align: top;"><img height="400" width="238.66666666666663" class="tiles-1-2-2" style="vertical-align: top;" src="http://159.226.241.32:8093/asserts/ad1ae1e0f72040e9949187cc8e61ae55/image/11/tiles/100/400/2/2?accessToken=accessToken"></div></div><div style="width: 800px;"><div style="width: 400px; height: 400px; float: left; text-align: left; vertical-align: top;"><img height="102.66666666666663" width="400" class="tiles-1-1-3" style="vertical-align: top;" src="http://159.226.241.32:8093/asserts/ad1ae1e0f72040e9949187cc8e61ae55/image/11/tiles/100/400/1/3?accessToken=accessToken"></div><div style="width: 400px; height: 400px; float: left; text-align: left; vertical-align: top;"><img height="102.66666666666663" width="238.66666666666663" class="tiles-1-2-3" style="vertical-align: top;" src="http://159.226.241.32:8093/asserts/ad1ae1e0f72040e9949187cc8e61ae55/image/11/tiles/100/400/2/3?accessToken=accessToken"></div></div></div></div><div id="docViewer_ViewContainer_Wrap_11" class="fwr-page border  fwr-hidden" style="width:100%;height:100%"></div><img alt="" src="http://159.226.241.32:8093/asserts/ad1ae1e0f72040e9949187cc8e61ae55/image/11/thumb?accessToken=accessToken&amp;formMode=true" id="docViewer_ViewContainer_BG_11" class="border  fwr-page-bg-image" style="width:100%;height:100%;background-size:cover"><div id="docViewer_ViewContainer_Loader_11" class="fwr-page-loading" style="margin-left: -12px; margin-top: -341.578px; display: none;"> <p class="fwr-page-loadinfo">加载字体中...</p></div><div id="docViewer_ViewContainer_TrialWatermark_11" class="fwr-trial-watermark"></div><div id="docViewer_ViewContainer_Watermark_11" class="fwr-watermark" style="display: none;"></div><div id="docViewer_ViewContainer_UserWatermark_11" style="display: none;"></div><div id="docViewer_ViewContainer_PageContainer_11_SignatureContainer"> </div><div id="docViewer_ViewContainer_PageContainer_11_SignatureSigned"> </div><div id="docViewer_ViewContainer_PageContainer_11_inkSignedContainer"> </div><div id="docViewer_ViewContainer_PageContainer_11_AnnotsContainer"></div></div></div><div class="fwr-page-invisible" style="width: 100%;"><div class="fwr-page fwr-page-tiles" data-width="638.6666666666666" data-height="902.6666666666666" id="docViewer_ViewContainer_PageContainer_12" style="position: relative; height: 903px; width: 639px; margin-left: 328px;"><div class="tile_layers"><div class="tiles-layer tiles-layer-100" style="overflow: hidden; width: 638.667px; height: 902.667px; transform: scale(1); transform-origin: 0px 0px 0px; position: absolute; top: 0px; z-index: 1; display: block;"><div style="width: 800px;"><div style="width: 400px; height: 400px; float: left; text-align: left; vertical-align: top;"><img height="400" width="400" class="tiles-1-1-1" style="vertical-align: top;" src="http://159.226.241.32:8093/asserts/ad1ae1e0f72040e9949187cc8e61ae55/image/12/tiles/100/400/1/1?accessToken=accessToken"></div><div style="width: 400px; height: 400px; float: left; text-align: left; vertical-align: top;"><img height="400" width="238.66666666666663" class="tiles-1-2-1" style="vertical-align: top;" src="http://159.226.241.32:8093/asserts/ad1ae1e0f72040e9949187cc8e61ae55/image/12/tiles/100/400/2/1?accessToken=accessToken"></div></div><div style="width: 800px;"><div style="width: 400px; height: 400px; float: left; text-align: left; vertical-align: top;"><img height="400" width="400" class="tiles-1-1-2" style="vertical-align: top;" src="http://159.226.241.32:8093/asserts/ad1ae1e0f72040e9949187cc8e61ae55/image/12/tiles/100/400/1/2?accessToken=accessToken"></div><div style="width: 400px; height: 400px; float: left; text-align: left; vertical-align: top;"><img height="400" width="238.66666666666663" class="tiles-1-2-2" style="vertical-align: top;" src="http://159.226.241.32:8093/asserts/ad1ae1e0f72040e9949187cc8e61ae55/image/12/tiles/100/400/2/2?accessToken=accessToken"></div></div><div style="width: 800px;"><div style="width: 400px; height: 400px; float: left; text-align: left; vertical-align: top;"><img height="102.66666666666663" width="400" class="tiles-1-1-3" style="vertical-align: top; display: none;"></div><div style="width: 400px; height: 400px; float: left; text-align: left; vertical-align: top;"><img height="102.66666666666663" width="238.66666666666663" class="tiles-1-2-3" style="vertical-align: top; display: none;"></div></div></div></div><div id="docViewer_ViewContainer_Wrap_12" class="fwr-page border  fwr-hidden" style="width:100%;height:100%"></div><img alt="" src="http://159.226.241.32:8093/asserts/ad1ae1e0f72040e9949187cc8e61ae55/image/12/thumb?accessToken=accessToken&amp;formMode=true" id="docViewer_ViewContainer_BG_12" class="border  fwr-page-bg-image" style="width:100%;height:100%;background-size:cover"><div id="docViewer_ViewContainer_Loader_12" class="fwr-page-loading" style="display: none;"> <p class="fwr-page-loadinfo">加载字体中...</p></div><div id="docViewer_ViewContainer_TrialWatermark_12" class="fwr-trial-watermark"></div><div id="docViewer_ViewContainer_Watermark_12" class="fwr-watermark" style="display: none;"></div><div id="docViewer_ViewContainer_UserWatermark_12" style="display: none;"></div><div id="docViewer_ViewContainer_PageContainer_12_SignatureContainer"> </div><div id="docViewer_ViewContainer_PageContainer_12_SignatureSigned"> </div><div id="docViewer_ViewContainer_PageContainer_12_inkSignedContainer"> </div><div id="docViewer_ViewContainer_PageContainer_12_AnnotsContainer"></div></div></div><div class="fwr-page-invisible" style="width: 100%;"><div class="fwr-page" data-width="638.6666666666666" data-height="902.6666666666666" id="docViewer_ViewContainer_PageContainer_13" style="position: relative; height: 903px; width: 639px; margin-left: 328px;"><div id="docViewer_ViewContainer_Wrap_13" class="fwr-page border " style="width:100%;height:100%"></div><img alt="" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" id="docViewer_ViewContainer_BG_13" class="border  fwr-hidden fwr-page-bg-image" style="width:100%;height:100%;background-size:cover"><div id="docViewer_ViewContainer_Loader_13" class="fwr-page-loading"> <p class="fwr-page-loadinfo">加载字体中...</p></div><div id="docViewer_ViewContainer_TrialWatermark_13" class="fwr-trial-watermark"></div><div id="docViewer_ViewContainer_Watermark_13" class="fwr-watermark" style="display: none;"></div><div id="docViewer_ViewContainer_UserWatermark_13" style="display: none;"></div></div></div><div class="fwr-page-invisible" style="width: 100%;"><div class="fwr-page" data-width="638.6666666666666" data-height="902.6666666666666" id="docViewer_ViewContainer_PageContainer_14" style="position: relative; height: 903px; width: 639px; margin-left: 328px;"><div id="docViewer_ViewContainer_Wrap_14" class="fwr-page border " style="width:100%;height:100%"></div><img alt="" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" id="docViewer_ViewContainer_BG_14" class="border  fwr-hidden fwr-page-bg-image" style="width:100%;height:100%;background-size:cover"><div id="docViewer_ViewContainer_Loader_14" class="fwr-page-loading"> <p class="fwr-page-loadinfo">加载字体中...</p></div><div id="docViewer_ViewContainer_TrialWatermark_14" class="fwr-trial-watermark"></div><div id="docViewer_ViewContainer_Watermark_14" class="fwr-watermark" style="display: none;"></div><div id="docViewer_ViewContainer_UserWatermark_14" style="display: none;"></div></div></div><div class="fwr-page-invisible" style="width: 100%;"><div class="fwr-page" data-width="638.6666666666666" data-height="902.6666666666666" id="docViewer_ViewContainer_PageContainer_15" style="position: relative; height: 903px; width: 639px; margin-left: 328px;"><div id="docViewer_ViewContainer_Wrap_15" class="fwr-page border " style="width:100%;height:100%"></div><img alt="" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" id="docViewer_ViewContainer_BG_15" class="border  fwr-hidden fwr-page-bg-image" style="width:100%;height:100%;background-size:cover"><div id="docViewer_ViewContainer_Loader_15" class="fwr-page-loading"> <p class="fwr-page-loadinfo">加载字体中...</p></div><div id="docViewer_ViewContainer_TrialWatermark_15" class="fwr-trial-watermark"></div><div id="docViewer_ViewContainer_Watermark_15" class="fwr-watermark" style="display: none;"></div><div id="docViewer_ViewContainer_UserWatermark_15" style="display: none;"></div></div></div><div class="fwr-page-invisible" style="width: 100%;"><div class="fwr-page" data-width="638.6666666666666" data-height="902.6666666666666" id="docViewer_ViewContainer_PageContainer_16" style="position: relative; height: 903px; width: 639px; margin-left: 328px;"><div id="docViewer_ViewContainer_Wrap_16" class="fwr-page border " style="width:100%;height:100%"></div><img alt="" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" id="docViewer_ViewContainer_BG_16" class="border  fwr-hidden fwr-page-bg-image" style="width:100%;height:100%;background-size:cover"><div id="docViewer_ViewContainer_Loader_16" class="fwr-page-loading"> <p class="fwr-page-loadinfo">加载字体中...</p></div><div id="docViewer_ViewContainer_TrialWatermark_16" class="fwr-trial-watermark"></div><div id="docViewer_ViewContainer_Watermark_16" class="fwr-watermark" style="display: none;"></div><div id="docViewer_ViewContainer_UserWatermark_16" style="display: none;"></div></div></div><div class="fwr-page-invisible" style="width: 100%;"><div class="fwr-page" data-width="638.6666666666666" data-height="902.6666666666666" id="docViewer_ViewContainer_PageContainer_17" style="position: relative; height: 903px; width: 639px; margin-left: 328px;"><div id="docViewer_ViewContainer_Wrap_17" class="fwr-page border " style="width:100%;height:100%"></div><img alt="" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" id="docViewer_ViewContainer_BG_17" class="border  fwr-hidden fwr-page-bg-image" style="width:100%;height:100%;background-size:cover"><div id="docViewer_ViewContainer_Loader_17" class="fwr-page-loading"> <p class="fwr-page-loadinfo">加载字体中...</p></div><div id="docViewer_ViewContainer_TrialWatermark_17" class="fwr-trial-watermark"></div><div id="docViewer_ViewContainer_Watermark_17" class="fwr-watermark" style="display: none;"></div><div id="docViewer_ViewContainer_UserWatermark_17" style="display: none;"></div></div></div><div class="fwr-page-invisible" style="width: 100%;"><div class="fwr-page" data-width="638.6666666666666" data-height="902.6666666666666" id="docViewer_ViewContainer_PageContainer_18" style="position: relative; height: 903px; width: 639px; margin-left: 328px;"><div id="docViewer_ViewContainer_Wrap_18" class="fwr-page border " style="width:100%;height:100%"></div><img alt="" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" id="docViewer_ViewContainer_BG_18" class="border  fwr-hidden fwr-page-bg-image" style="width:100%;height:100%;background-size:cover"><div id="docViewer_ViewContainer_Loader_18" class="fwr-page-loading"> <p class="fwr-page-loadinfo">加载字体中...</p></div><div id="docViewer_ViewContainer_TrialWatermark_18" class="fwr-trial-watermark"></div><div id="docViewer_ViewContainer_Watermark_18" class="fwr-watermark" style="display: none;"></div><div id="docViewer_ViewContainer_UserWatermark_18" style="display: none;"></div></div></div><div class="fwr-page-invisible" style="width: 100%;"><div class="fwr-page" data-width="638.6666666666666" data-height="902.6666666666666" id="docViewer_ViewContainer_PageContainer_19" style="position: relative; height: 903px; width: 639px; margin-left: 328px;"><div id="docViewer_ViewContainer_Wrap_19" class="fwr-page border " style="width:100%;height:100%"></div><img alt="" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" id="docViewer_ViewContainer_BG_19" class="border  fwr-hidden fwr-page-bg-image" style="width:100%;height:100%;background-size:cover"><div id="docViewer_ViewContainer_Loader_19" class="fwr-page-loading"> <p class="fwr-page-loadinfo">加载字体中...</p></div><div id="docViewer_ViewContainer_TrialWatermark_19" class="fwr-trial-watermark"></div><div id="docViewer_ViewContainer_Watermark_19" class="fwr-watermark" style="display: none;"></div><div id="docViewer_ViewContainer_UserWatermark_19" style="display: none;"></div></div></div><div class="fwr-text-selection-operation-bar fwr-hidden" id="docViewer_ViewContainer_selection_operation_bar"><ul><li><a id="docViewer_ViewContainer_selection_operation_copy" href="javascript:void(0);">Copy</a></li></ul><div class="fwr-text-selection-operation-bar-right"></div></div></div><div class="fwrJspVerticalBar"><div class="fwrJspCap fwrJspCapTop"></div><div class="fwrJspTrack" style="height: 587px;"><div class="fwrJspDrag" style="height: 19px; top: 56.0359px;"><div class="fwrJspDragTop"></div><div class="fwrJspDragBottom"></div></div></div><div class="fwrJspCap fwrJspCapBottom"></div></div></div></div></div>
+			</div>
+		</div>
+	</div>
+
+	<div class="bottom_right_btn_container" style="">
+		<div class="foxit_login_btn" title="登录">
+<!-- 			<input type="button" value="登录" /> -->
+			<span class="foxit_function_btn"><i class="fa fa-home fa-fw"></i></span>
+		</div>
+		<div class="foxit_go_back_btn">
+
+			<span class="foxit_function_btn" title="返回图书展示页">
+				<i class="fa fa-book"></i>
+			</span>
+
+			<span class="show_hide_btn" data-status="0">
+				<i class="fa fa-arrow-left"></i>
+			</span>
+
+		</div>
+		<div class="foxit_feedback_btn" title="问题反馈">
+			<a href="mailto:elib@mail.sciencep.com"><span class="foxit_function_btn">
+				<i class="fa  fa-envelope"></i>
+			</span></a>
+		</div>
+
+	</div>
+
+<!-- 模态框 登录 -->
+<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+  			<div class="modal-header" style="text-align: center;">
+    			<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span>
+    			</button>
+    			<h3 class="modal-title" id="exampleModalLabel"><b>欢迎登录系统</b></h3>
+  			</div>
+     			<div class="modal-body">
+       			<form class="form-horizontal">
+	          		<div class="form-group">
+	          			<div class="col-xs-12">
+	            			<input type="text" class="form-control" id="txtName" name="username" placeholder="邮箱">
+            			</div>
+	          		</div>
+          			<div class="form-group" style="margin-bottom: 4px">
+	          			<div class="col-xs-12">
+		            		<input type="password" class="form-control" id="txtPwd" name="password" placeholder="密码">
+	            		</div>
+      				</div>
+      				<div class="form-group login_ip_container">
+      					<div class="col-xs-12">
+      						<span>本机IP：36.57.28.255</span>
+     						</div>
+      				</div>
+      				<div class="form-group">
+      					<div class="col-xs-6">
+      						<input type="text" class="form-control" id="checkcode" name="checkcode" placeholder="验证码">
+      					</div>
+      					<div class="col-xs-6">
+      						<img src="/kaptcha.jpg" id="kaptchaImage" alt="验证码" title="点击换图片" onclick="changeImage();">
+      					</div>
+      				</div>
+
+      				<div class="form-group">
+      					<div class="col-xs-12">
+      						<button id="login_btn" type="button" class="btn">登录系统</button>
+      					</div>
+      				</div>
+       			</form>
+     			</div>
+     			<div class="modal-footer">
+				<div class="form-group">
+					<div class="col-xs-12 third_login_title">
+						<span>通过第三方账号登录</span>
+					</div>
+				</div>
+				<div class="form-group">
+					<div class="col-xs-4">
+						<div class="kejiyun_container">
+							<a href="/shop/main/Login/kjyTxzLogin.do" id="kjyTxz" target="_parent">
+							<img src="/kxwk5_style/images/kejiyun.png">
+							</a>
+						</div>
+					</div>
+					<div class="col-xs-4">
+						<!--<a href="https://graph.qq.com/oauth2.0/authorize?response_type=code&client_id=101253044&redirect_uri=http%3A%2F%2Fbook.sciencereading.cn%2Fpublic_auth.jspx&scope=all">-->
+						<a href="javascript:;" onclick="qqlogin()">
+							<div class="qq_container" id="qq_container">
+								<i class="fa fa-qq"></i>
+							</div>
+						</a>
+					</div>
+					<div class="col-xs-4">
+						<a href="https://open.weixin.qq.com/connect/qrconnect?appid=wxbbe72137831b14a5&amp;redirect_uri=http%3A%2F%2Fbook.sciencereading.cn%2Fshop%2Fmain%2FLogin%2FweixinLogin.do&amp;response_type=code&amp;scope=snsapi_login&amp;state=STATE#wechat_redirect">
+							<div class=" weixin_container">
+								<i class="fa fa-weixin"></i>
+							</div>
+						</a>
+					</div>
+				</div>
+     			</div>
+		</div>
+		<div class="login_bottom_container">
+			<div class="row">
+				<div class="register_now col-xs-7">
+					<a href="/shop/member/Member/create.do"><span>还没有账号？立即注册</span></a>
+				</div>
+				<div class="forget_password col-xs-5">
+					<a href="/shop/member/Member/openFindPwd.do"><span>忘记密码？</span></a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- 模态框 分享信息 -->
+<div class="modal fade" id="shareModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header" style="text-align: center;">
+    			<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span>
+    			</button>
+    			<h3 class="modal-title" id="exampleModalLabel"><b>分享信息</b></h3>
+			</div>
+   			<div class="modal-body">
+				<div>书名：聆听宇宙的声音</div>
+				<div>作者：未来论坛 编</div>
+				<div>ISBN：9787030583093</div>
+				<div>出版日期：2018-08</div>
+				<div>二维码：</div>
+				<div><img id="imgPath"></div>
+   			</div>
+		</div>
+	</div>
+</div>
+
+
+	<input type="hidden" id="docuri" value="B74619A69CDFC4864E053010B0A0A6F46000.pdf">
+	<input type="hidden" id="book_id" value="B74619A69CDFC4864E053010B0A0A6F46000">
+	<input type="hidden" id="role_id" value="">
+	<input type="hidden" id="user_id" value="guestUser">
+	<input type="hidden" id="login_name" value="guestUser">
+	<input type="hidden" id="page_num" value="1">
+	<input type="hidden" id="ctx" value="">
+	<input type="hidden" id="annot_save_type" value="0">
+	<input type="hidden" id="permission_flag" value="1">
+	<input type="hidden" id="is_admin" value="0">
+	<input type="hidden" id="userIp" value="36.57.28.255">
+
+	<form id="form1" method="post" theme="simple" action="/shop/book/Booksimple/offlineDownload.do">
+		<input type="hidden" id="id" name="id" value="B74619A69CDFC4864E053010B0A0A6F46000 ">
+		<input type="hidden" id="page_for_refresh" name="page" value="">
+		<input type="hidden" id="readMark" name="readMark" value="1">
+		<input type="hidden" id="load_save_type" name="loadSaveType" value="0">
+    </form>
+	<textarea style="width:0px;height:0px;" id="share_link"></textarea>
+
+
+<script type="text/javascript" src="/shop/book/scripts/jquery-1.10.2.min.js"></script>
+
+<script type="text/javascript" src="/kxwk5_style/scripts/clipboard.min.js"></script>
+<script type="text/javascript" src="/kxwk4_1style/scripts/jquery.cookie.js"></script>
+<script type="text/javascript" src="/shop/book/scripts/jquery-migrate-1.2.1.js"></script>
+<script type="text/javascript" src="/shop/book/scripts/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/shop/book/scripts/jquery.form.min.js"></script>
+<script type="text/javascript" src="/shop/book/scripts/spectrum.js"></script>
+<script type="text/javascript" src="/shop/book/scripts/FileSaver.min.js"></script>
+
+<script type="text/javascript" src="/shop/book/scripts/release_websdk/webpdf.tools.mini.js"></script>
+<script type="text/javascript" src="/shop/book/scripts/control/common/common.js"></script>
+<script type="text/javascript" src="/shop/book/scripts/config/config.js"></script>
+<script type="text/javascript" src="/shop/book/scripts/config/apiConfig.js"></script>
+<script type="text/javascript" src="/shop/book/scripts/control/pc/common.js"></script>
+<script type="text/javascript" src="/shop/book/scripts/control/pc/toolbar.js"></script>
+<script type="text/javascript" src="/shop/book/scripts/control/pc/demo.js"></script>
+<script type="text/javascript" src="/shop/book/scripts/release_websdk/webpdf.mini.js"></script>
+<script type="text/javascript" src="/kxwk5_style/scripts/bootstrap.min.js"></script>
+<!-- qq登录 -->
+<script type="text/javascript" src="http://qzonestyle.gtimg.cn/qzone/openapi/qc_loader.js" data-appid="101425435" data-redirecturi="http://book.sciencereading.cn/shop/main/Login/qqCallbackPage.do" charset="utf-8"></script><script src="//qzonestyle.gtimg.cn/qzone/openapi/qc-1.0.1.js" type="text/javascript" data-appid="101425435" data-redirecturi="http://book.sciencereading.cn/shop/main/Login/qqCallbackPage.do" charset="utf-8"></script>
+
+
+<iframe src="https://graph.qq.com/jsdkproxy/PMProxy.html#1.0.1" style="width: 0px; height: 0px; display: none; overflow: hidden;"></iframe><div id="inkSignDlgLayer" style="width:100%;height:100%;top:0; left:0;z-index: 1060;position: absolute; display:none"></div><iframe id="docViewer-copy-frame" class="fwr-copy-frame"></iframe><div id="signatureDlgLayer" style="width:100%;height:100%;top:0;left:0;z-index: 1060;position: absolute; display:none"></div><div id="fwr-sign-context-menu-container"><ul id="fwr-sign-context-menu" class="fwrContextMenu fwr-cm-default fwr-text-selection-operation-bar" style="left: 341px; top: 167px; display: none;"><li class="separator"></li><li id="sign_properties" style="" menuname="ShowProperties">签名属性</li><li id="sign_verify" style="" menuname="Verify">验证签名</li></ul></div><div id="docViewerFxMenuContainer"><ul id="docViewerFxMenu" class="fwrContextMenu fwr-cm-default" style="left: 341px; top: 167px; display: none;"><li id="docViewer_cmz50" class="icon" menuname="MenuZoom50"><span class="ok icon"></span>50%</li><li id="docViewer_cmz75" class="icon" menuname="MenuZoom75"><span class="ok icon"></span>75%</li><li id="docViewer_cmz100" class="icon" menuname="MenuZoom100"><span class="ok icon"></span>100%</li><li id="docViewer_cmz125" class="icon" menuname="MenuZoom125"><span class="ok icon"></span>125%</li><li id="docViewer_cmz150" class="icon" menuname="MenuZoom150"><span class="ok icon"></span>150%</li><li id="docViewer_cmz200" class="icon" menuname="MenuZoom200"><span class="ok icon"></span>200%</li><li id="docViewer_fitPage" class="icon" menuname="FitPage"><span class="ok icon"></span><label data-i18n="CommandUI.FitPage"></label></li><li id="docViewer_fitWidth" class="icon" menuname="FitWidth"><span class="ok icon"></span><label data-i18n="CommandUI.FitWidth"></label></li><li class="separator"></li><li id="docViewer_previousPage" class="icon" menuname="MenuPrevPage"><span class="icon icon1"></span><label data-i18n="Menu.PrevPage"></label></li><li id="docViewer_nextPage" class="icon" menuname="MenuNextPage"><span class="icon icon1"></span><label data-i18n="Menu.NextPage"></label></li><li class="separator"></li><li id="docViewercontextMenuDocProperties" class="icon" menuname="MenuDocProperties"><span class="icon icon1"></span><label data-i18n="DocProperties.Title"></label></li></ul></div><div id="fwr-textSelect-context-menu-container"><ul id="fwr-textSelect-context-menu" class="fwrContextMenu fwr-cm-default fwr-text-selection-operation-bar" style="left: 341px; top: 167px; display: none;"><li id="copy_text" menuname="Copy">拷贝</li><li class="separator"></li><li id="highlight_annot" menuname="Highlight">高亮</li><li id="underline_annot" menuname="Underline">下划线</li><li id="strikeout_annot" menuname="Strikeout">删除线</li><li id="squiggly_annot" menuname="Squiggly">波浪线</li><li id="replace_annot" style="" menuname="Replace">替换</li><li id="insert_annot" style="" menuname="Insert">插入文本</li><li id="link_annot" style="" menuname="Link">创建链接</li></ul></div><div id="fwr-annots-context-menu-container"><ul id="fwr-annots-context-menu" class="fwrContextMenu fwr-cm-default" style="left: 341px; top: 167px; display: none;"><li class="icon" style="width: 120px;display: none" id="open_property" menuname="property">属性</li><li id="reply_annot" class="icon" style="width: 120px;" menuname="ReplyAnnot">回复</li><li id="delete_annot" class="icon" style="width: 120px;" menuname="DeleteAnnot">删除</li></ul></div><span id="pupup-replyannot-span" style="display: none;"> <strong></strong></span></body>
+
+
+</body>
+</html>
